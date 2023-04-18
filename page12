@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<style>
+    .ani{
+        width :500px;
+        height :500px;
+        background-color :royalblue;
+        transition:width 4s,height 4s,border-radius 4s;
+
+    }
+    .ani:hover{
+        width :300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: green;
+    }
+    .ani{
+        animation: bouncing 0.5s ease 0s infinite alternate both;
+
+    }
+    @keyframes bouncing{
+        0%{
+            bottom: 0;
+            box-shadow: 0 0 5px blue;
+        }
+        100%{
+            bottom: 100;
+            box-shadow: 0 100px 100px black;
+        }
+    }
+    
+</style>
+<body>
+    <div class="ani">
+    </div>
+</body>
+</html>
