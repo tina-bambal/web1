@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* transition */
+        .box{
+            width: 100px;
+            height: 100px;
+            background:red;
+            transition: width 2s,height 4s, border-radius 4s;
+        }
+
+        .box:hover{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+        }
+
+        /* animation */
+
+        /* animation:animation_name duration timing_function delay loop direction fill_mode*/
+        .box{
+            animation: bouncing 0.5s ease 0s infinite alternate both;
+        }
+
+        @keyframes bouncing {
+            0%{
+                bottom: 0;
+                box-shadow: 0 0 5px black;
+            }
+
+            100%{
+                bottom: 50px;
+                box-shadow: 0 50px 50px black;
+            }
+        }
+        div{
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+    background-color: aquamarine;
+    height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
